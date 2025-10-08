@@ -193,23 +193,5 @@ In the `medimate-ui` directory:
 - **AI/ML Services** - Enhanced document processing
 - **Multi-language Support** - Internationalization
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👥 Team
-
-- **Project Lead**: Prakriti
-- **Frontend Developers**: [Add team member names]
-- **Backend Developers**: [Add team member names]
-- **UI/UX Designers**: [Add team member names]
-
-## 📞 Support
-
-For questions or support, please contact:
-- Email: [your-email@domain.com]
-- Project Issues: [GitHub Issues](https://github.com/Prakriti2603/medimate/issues)
-
----
 
 **MediMate** - Transforming Healthcare Insurance Through Technology 🏥💙
