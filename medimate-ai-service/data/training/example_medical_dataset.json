@@ -1,0 +1,112 @@
+[
+  {
+    "text": "Patient John Doe, age 45, presents with chest pain and shortness of breath. Diagnosed with myocardial infarction. Prescribed metoprolol 50mg twice daily.",
+    "entities": [
+      {"start": 8, "end": 16, "label": "PATIENT_NAME"},
+      {"start": 22, "end": 24, "label": "AGE"},
+      {"start": 39, "end": 49, "label": "SYMPTOM"},
+      {"start": 54, "end": 72, "label": "SYMPTOM"},
+      {"start": 88, "end": 108, "label": "DIAGNOSIS"},
+      {"start": 120, "end": 130, "label": "MEDICATION"},
+      {"start": 131, "end": 136, "label": "DOSAGE"},
+      {"start": 137, "end": 148, "label": "FREQUENCY"}
+    ],
+    "annotations": [
+      {"field_type": "patient_name", "value": "John Doe", "start_pos": 8, "end_pos": 16, "confidence": 0.95},
+      {"field_type": "age", "value": "45", "start_pos": 22, "end_pos": 24, "confidence": 0.98},
+      {"field_type": "primary_diagnosis", "value": "myocardial infarction", "start_pos": 88, "end_pos": 108, "confidence": 0.92},
+      {"field_type": "medication", "value": "metoprolol", "start_pos": 120, "end_pos": 130, "confidence": 0.89},
+      {"field_type": "dosage", "value": "50mg", "start_pos": 131, "end_pos": 136, "confidence": 0.94}
+    ],
+    "label": "CARDIOLOGY"
+  },
+  {
+    "text": "Mary Smith, DOB 03/15/1978, insurance ID: INS123456. Chief complaint: severe headache for 3 days. Physical exam reveals hypertension 160/95. Prescribed lisinopril 10mg daily.",
+    "entities": [
+      {"start": 0, "end": 10, "label": "PATIENT_NAME"},
+      {"start": 16, "end": 26, "label": "DATE_OF_BIRTH"},
+      {"start": 40, "end": 49, "label": "INSURANCE_ID"},
+      {"start": 69, "end": 84, "label": "SYMPTOM"},
+      {"start": 89, "end": 95, "label": "DURATION"},
+      {"start": 122, "end": 134, "label": "CONDITION"},
+      {"start": 135, "end": 141, "label": "VITAL_SIGNS"},
+      {"start": 153, "end": 163, "label": "MEDICATION"},
+      {"start": 164, "end": 169, "label": "DOSAGE"},
+      {"start": 170, "end": 175, "label": "FREQUENCY"}
+    ],
+    "annotations": [
+      {"field_type": "patient_name", "value": "Mary Smith", "start_pos": 0, "end_pos": 10, "confidence": 0.97},
+      {"field_type": "date_of_birth", "value": "03/15/1978", "start_pos": 16, "end_pos": 26, "confidence": 0.99},
+      {"field_type": "insurance_id", "value": "INS123456", "start_pos": 40, "end_pos": 49, "confidence": 0.96},
+      {"field_type": "chief_complaint", "value": "severe headache for 3 days", "start_pos": 69, "end_pos": 95, "confidence": 0.91},
+      {"field_type": "blood_pressure", "value": "160/95", "start_pos": 135, "end_pos": 141, "confidence": 0.93},
+      {"field_type": "medication", "value": "lisinopril", "start_pos": 153, "end_pos": 163, "confidence": 0.88}
+    ],
+    "label": "INTERNAL_MEDICINE"
+  },
+  {
+    "text": "Emergency visit: Robert Johnson, age 32, motorcycle accident. Multiple fractures in left leg. X-ray shows tibial fracture. Surgery scheduled for tomorrow. Post-op care includes physical therapy.",
+    "entities": [
+      {"start": 17, "end": 31, "label": "PATIENT_NAME"},
+      {"start": 37, "end": 39, "label": "AGE"},
+      {"start": 41, "end": 59, "label": "INCIDENT_TYPE"},
+      {"start": 61, "end": 95, "label": "INJURY"},
+      {"start": 107, "end": 122, "label": "DIAGNOSIS"},
+      {"start": 124, "end": 131, "label": "PROCEDURE"},
+      {"start": 132, "end": 151, "label": "SCHEDULE"},
+      {"start": 153, "end": 196, "label": "TREATMENT_PLAN"}
+    ],
+    "annotations": [
+      {"field_type": "patient_name", "value": "Robert Johnson", "start_pos": 17, "end_pos": 31, "confidence": 0.94},
+      {"field_type": "age", "value": "32", "start_pos": 37, "end_pos": 39, "confidence": 0.98},
+      {"field_type": "incident_type", "value": "motorcycle accident", "start_pos": 41, "end_pos": 59, "confidence": 0.92},
+      {"field_type": "primary_diagnosis", "value": "tibial fracture", "start_pos": 107, "end_pos": 122, "confidence": 0.95},
+      {"field_type": "procedure", "value": "Surgery", "start_pos": 124, "end_pos": 131, "confidence": 0.89}
+    ],
+    "label": "EMERGENCY"
+  },
+  {
+    "text": "Follow-up appointment: Sarah Wilson, insurance: BC123789, previous diagnosis: diabetes type 2. Current HbA1c: 8.2%. Adjusting metformin to 1000mg twice daily. Next appointment in 3 months.",
+    "entities": [
+      {"start": 23, "end": 35, "label": "PATIENT_NAME"},
+      {"start": 47, "end": 55, "label": "INSURANCE_ID"},
+      {"start": 78, "end": 93, "label": "DIAGNOSIS"},
+      {"start": 103, "end": 108, "label": "LAB_VALUE"},
+      {"start": 120, "end": 129, "label": "MEDICATION"},
+      {"start": 133, "end": 140, "label": "DOSAGE"},
+      {"start": 141, "end": 152, "label": "FREQUENCY"},
+      {"start": 154, "end": 189, "label": "FOLLOW_UP"}
+    ],
+    "annotations": [
+      {"field_type": "patient_name", "value": "Sarah Wilson", "start_pos": 23, "end_pos": 35, "confidence": 0.96},
+      {"field_type": "insurance_id", "value": "BC123789", "start_pos": 47, "end_pos": 55, "confidence": 0.97},
+      {"field_type": "previous_diagnosis", "value": "diabetes type 2", "start_pos": 78, "end_pos": 93, "confidence": 0.93},
+      {"field_type": "lab_result", "value": "HbA1c: 8.2%", "start_pos": 103, "end_pos": 108, "confidence": 0.91},
+      {"field_type": "medication", "value": "metformin", "start_pos": 120, "end_pos": 129, "confidence": 0.87},
+      {"field_type": "dosage", "value": "1000mg", "start_pos": 133, "end_pos": 140, "confidence": 0.94}
+    ],
+    "label": "ENDOCRINOLOGY"
+  },
+  {
+    "text": "Pediatric visit: Emma Davis, age 8, weight 25kg, height 120cm. Routine vaccination: MMR booster. No adverse reactions. Parent contact: (555) 123-4567. Next checkup in 6 months.",
+    "entities": [
+      {"start": 17, "end": 27, "label": "PATIENT_NAME"},
+      {"start": 33, "end": 34, "label": "AGE"},
+      {"start": 43, "end": 47, "label": "WEIGHT"},
+      {"start": 56, "end": 61, "label": "HEIGHT"},
+      {"start": 81, "end": 92, "label": "VACCINATION"},
+      {"start": 94, "end": 117, "label": "REACTION_STATUS"},
+      {"start": 135, "end": 149, "label": "PHONE_NUMBER"},
+      {"start": 151, "end": 177, "label": "FOLLOW_UP"}
+    ],
+    "annotations": [
+      {"field_type": "patient_name", "value": "Emma Davis", "start_pos": 17, "end_pos": 27, "confidence": 0.95},
+      {"field_type": "age", "value": "8", "start_pos": 33, "end_pos": 34, "confidence": 0.99},
+      {"field_type": "weight", "value": "25kg", "start_pos": 43, "end_pos": 47, "confidence": 0.97},
+      {"field_type": "height", "value": "120cm", "start_pos": 56, "end_pos": 61, "confidence": 0.98},
+      {"field_type": "vaccination", "value": "MMR booster", "start_pos": 81, "end_pos": 92, "confidence": 0.92},
+      {"field_type": "emergency_contact", "value": "(555) 123-4567", "start_pos": 135, "end_pos": 149, "confidence": 0.96}
+    ],
+    "label": "PEDIATRICS"
+  }
+]

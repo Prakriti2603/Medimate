@@ -96,6 +96,45 @@
   transform: translateY(-1px);
 }
 
+.file-size-info {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.file-size-info small {
+  color: #666;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.upload-message {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.upload-message.error {
+  background-color: #fee;
+  border: 1px solid #fcc;
+  color: #c53030;
+}
+
+.upload-message.warning {
+  background-color: #fffbeb;
+  border: 1px solid #fed7aa;
+  color: #d69e2e;
+}
+
+.message-item {
+  margin-bottom: 0.25rem;
+}
+
+.message-item:last-child {
+  margin-bottom: 0;
+}
+
 .file-input:focus + .file-input-label {
   outline: 2px solid #667eea;
   outline-offset: 2px;
@@ -128,6 +167,48 @@
   background: linear-gradient(90deg, #4caf50 0%, #8bc34a 100%);
   transition: width 0.3s ease;
   border-radius: 10px;
+}
+
+.file-summary {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.file-summary h4 {
+  margin: 0 0 1rem 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.summary-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.stat-label {
+  font-weight: 600;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.stat-value {
+  font-weight: 700;
+  color: #333;
+  font-size: 0.9rem;
 }
 
 .submit-btn {

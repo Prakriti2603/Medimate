@@ -28,9 +28,13 @@
 
 .module-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 2rem;
   margin-bottom: 3rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .module-card {
@@ -125,6 +129,17 @@
   line-height: 1.5;
 }
 
+@media (max-width: 1024px) and (min-width: 769px) {
+  .module-cards {
+    max-width: 800px;
+    gap: 1.5rem;
+  }
+  
+  .module-card {
+    padding: 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .selector-content h2 {
     font-size: 2rem;
@@ -132,7 +147,9 @@
   
   .module-cards {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
     gap: 1.5rem;
+    max-width: none;
   }
   
   .module-card {
@@ -146,4 +163,34 @@
   .module-card h3 {
     font-size: 1.5rem;
   }
+}
+.mod
+ule-card.ai {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: 2px solid #667eea;
+}
+
+.module-card.ai:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.3);
+  border-color: #5a6fd8;
+}
+
+.module-card.ai .module-icon {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.module-card.ai h3 {
+  color: white;
+}
+
+.module-card.ai p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.module-card.ai .module-features span {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }

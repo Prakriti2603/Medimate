@@ -1,0 +1,117 @@
+[
+  {
+    "text": "Patient: John Doe 0, Age: 25, Insurance: INS1000",
+    "annotations": [
+      {
+        "field_type": "patient_name",
+        "value": "John Doe 0",
+        "start_pos": 9,
+        "end_pos": 19
+      },
+      {
+        "field_type": "age",
+        "value": "25",
+        "start_pos": 26,
+        "end_pos": 28
+      },
+      {
+        "field_type": "insurance_id",
+        "value": "INS1000",
+        "start_pos": 41,
+        "end_pos": 48
+      }
+    ]
+  },
+  {
+    "text": "Patient: John Doe 1, Age: 26, Insurance: INS1001",
+    "annotations": [
+      {
+        "field_type": "patient_name",
+        "value": "John Doe 1",
+        "start_pos": 9,
+        "end_pos": 19
+      },
+      {
+        "field_type": "age",
+        "value": "26",
+        "start_pos": 26,
+        "end_pos": 28
+      },
+      {
+        "field_type": "insurance_id",
+        "value": "INS1001",
+        "start_pos": 41,
+        "end_pos": 48
+      }
+    ]
+  },
+  {
+    "text": "Patient: John Doe 2, Age: 27, Insurance: INS1002",
+    "annotations": [
+      {
+        "field_type": "patient_name",
+        "value": "John Doe 2",
+        "start_pos": 9,
+        "end_pos": 19
+      },
+      {
+        "field_type": "age",
+        "value": "27",
+        "start_pos": 26,
+        "end_pos": 28
+      },
+      {
+        "field_type": "insurance_id",
+        "value": "INS1002",
+        "start_pos": 41,
+        "end_pos": 48
+      }
+    ]
+  },
+  {
+    "text": "Patient: John Doe 3, Age: 28, Insurance: INS1003",
+    "annotations": [
+      {
+        "field_type": "patient_name",
+        "value": "John Doe 3",
+        "start_pos": 9,
+        "end_pos": 19
+      },
+      {
+        "field_type": "age",
+        "value": "28",
+        "start_pos": 26,
+        "end_pos": 28
+      },
+      {
+        "field_type": "insurance_id",
+        "value": "INS1003",
+        "start_pos": 41,
+        "end_pos": 48
+      }
+    ]
+  },
+  {
+    "text": "Patient: John Doe 4, Age: 29, Insurance: INS1004",
+    "annotations": [
+      {
+        "field_type": "patient_name",
+        "value": "John Doe 4",
+        "start_pos": 9,
+        "end_pos": 19
+      },
+      {
+        "field_type": "age",
+        "value": "29",
+        "start_pos": 26,
+        "end_pos": 28
+      },
+      {
+        "field_type": "insurance_id",
+        "value": "INS1004",
+        "start_pos": 41,
+        "end_pos": 48
+      }
+    ]
+  }
+]

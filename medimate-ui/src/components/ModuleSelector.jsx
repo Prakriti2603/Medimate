@@ -53,6 +53,17 @@ const ModuleSelector = () => {
               <span>• AI Performance</span>
             </div>
           </Link>
+
+          <Link to="/ai/form-processor" className="module-card ai">
+            <div className="module-icon">🤖</div>
+            <h3>AI Form Processor</h3>
+            <p>AI-powered medical document processing and automatic form filling</p>
+            <div className="module-features">
+              <span>• Document Upload</span>
+              <span>• AI Text Extraction</span>
+              <span>• Auto Form Fill</span>
+            </div>
+          </Link>
         </div>
 
         <div className="demo-note">

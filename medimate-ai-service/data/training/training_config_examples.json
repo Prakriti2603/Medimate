@@ -1,0 +1,133 @@
+{
+  "ner_training_config": {
+    "model_name": "medical_ner_v1",
+    "model_type": "ner",
+    "training_data_path": "./data/training/example_medical_dataset.json",
+    "base_model": "en_core_web_sm",
+    "epochs": 20,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "validation_split": 0.2,
+    "labels": [
+      "PATIENT_NAME",
+      "AGE",
+      "DATE_OF_BIRTH",
+      "INSURANCE_ID",
+      "SYMPTOM",
+      "DIAGNOSIS",
+      "MEDICATION",
+      "DOSAGE",
+      "FREQUENCY",
+      "VITAL_SIGNS",
+      "LAB_VALUE",
+      "PROCEDURE",
+      "CONDITION"
+    ],
+    "hyperparameters": {
+      "dropout": 0.2,
+      "optimizer": "adam",
+      "weight_decay": 0.01
+    }
+  },
+  
+  "classification_training_config": {
+    "model_name": "medical_document_classifier_v1",
+    "model_type": "classification",
+    "training_data_path": "./data/training/example_medical_dataset.json",
+    "base_model": "bert-base-uncased",
+    "epochs": 5,
+    "batch_size": 16,
+    "learning_rate": 2e-5,
+    "validation_split": 0.2,
+    "num_labels": 5,
+    "labels": [
+      "CARDIOLOGY",
+      "INTERNAL_MEDICINE",
+      "EMERGENCY",
+      "ENDOCRINOLOGY",
+      "PEDIATRICS"
+    ],
+    "hyperparameters": {
+      "warmup_steps": 500,
+      "weight_decay": 0.01,
+      "max_length": 512
+    }
+  },
+  
+  "field_extraction_training_config": {
+    "model_name": "medical_field_extractor_v1",
+    "model_type": "field_extraction",
+    "training_data_path": "./data/training/example_medical_dataset.json",
+    "base_model": "bert-base-uncased",
+    "epochs": 10,
+    "batch_size": 16,
+    "learning_rate": 3e-5,
+    "validation_split": 0.2,
+    "field_types": [
+      "patient_name",
+      "age",
+      "date_of_birth",
+      "insurance_id",
+      "primary_diagnosis",
+      "medication",
+      "dosage",
+      "chief_complaint",
+      "blood_pressure",
+      "lab_result",
+      "procedure",
+      "emergency_contact"
+    ],
+    "hyperparameters": {
+      "max_length": 512,
+      "warmup_steps": 1000,
+      "weight_decay": 0.01,
+      "gradient_accumulation_steps": 2
+    }
+  },
+  
+  "custom_medical_training_config": {
+    "model_name": "custom_medical_ai_v1",
+    "model_type": "field_extraction",
+    "training_data_path": "./data/training/your_medical_dataset.json",
+    "base_model": "distilbert-base-uncased",
+    "epochs": 15,
+    "batch_size": 32,
+    "learning_rate": 5e-5,
+    "validation_split": 0.15,
+    "early_stopping": true,
+    "early_stopping_patience": 3,
+    "save_best_model": true,
+    "evaluation_strategy": "epoch",
+    "logging_steps": 100,
+    "field_types": [
+      "patient_demographics",
+      "medical_history",
+      "current_symptoms",
+      "diagnosis",
+      "treatment_plan",
+      "medications",
+      "lab_results",
+      "vital_signs",
+      "insurance_info",
+      "appointment_details"
+    ],
+    "data_preprocessing": {
+      "text_cleaning": true,
+      "normalize_medical_terms": true,
+      "handle_abbreviations": true,
+      "anonymize_phi": true
+    },
+    "model_optimization": {
+      "use_mixed_precision": true,
+      "gradient_checkpointing": true,
+      "dataloader_num_workers": 4
+    },
+    "hyperparameters": {
+      "max_length": 768,
+      "warmup_ratio": 0.1,
+      "weight_decay": 0.01,
+      "adam_epsilon": 1e-8,
+      "max_grad_norm": 1.0
+    }
+  }
+}
